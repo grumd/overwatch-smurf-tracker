@@ -11,5 +11,5 @@ from screen_recorder_sdk import screen_recorder
 
 import start
 
-print(start.recognize_scoreboard(cv2.imread('./scoreboards/scoreboard_2020-08-12-01-59-46.png')))
-print(start.recognize_scoreboard(cv2.imread('./scoreboards/scoreboard_2020-08-12-03-59-50.png')))
+print(start.recognize_scoreboard(cv2.imread('./scoreboards_errors/scoreboard_2020-08-15-02-57-52.png')))
+print(start.recognize_scoreboard(cv2.imread('./scoreboards_errors/scoreboard_2020-08-12-01-59-46.png')))

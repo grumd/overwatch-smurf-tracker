@@ -27,6 +27,7 @@ for scoreboard_file in scoreboards:
   date_text = scoreboard_file.replace('scoreboard_', '').replace('.png', '')
   result_file = next((r for r in results if r.find(date_text) > -1), None)
   if result_file is not None:
+    print('File:', scoreboard_file)
     img = cv2.imread(join(path, scoreboard_file))
     img_res = cv2.imread(join(path, result_file))
     players = start.recognize_scoreboard(img)
